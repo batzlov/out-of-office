@@ -29,12 +29,15 @@ export default function Experience() {
                 <KeyboardControls map={keyboardMap}>
                     <Ecctrl
                         debug
+                        animated
                         capsuleHalfHeight={0.35}
                         capsuleRadius={0.3}
                         floatHeight={0.0}
                         camInitDis={-5}
                         camMaxDis={-7}
                         camMinDis={-3}
+                        maxVelLimit={5}
+                        sprintMult={2}
                     >
                         <Player />
                     </Ecctrl>
